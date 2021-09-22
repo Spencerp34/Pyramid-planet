@@ -2,9 +2,13 @@
 
 
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
   text-align: center;
   position: absolute;
   color: white;
+  width: 95%;
 }
 
 .App-header {
@@ -17,13 +21,21 @@
   color: white;
 }
 
-
-h1{
+#logo{
   font-family: 'Press Start 2P';
-  animation: fadeIn 4s;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+.content{
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+
+.home{
+  justify-content: right;
+}
+
+footer{
+  margin-top: 100px;
 }

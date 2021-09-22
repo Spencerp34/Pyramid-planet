@@ -1,5 +1,6 @@
 import '../index.css';
 import * as THREE from 'three';
+import brickTexture from '../assets/miscPics/Brick_Wall_017_normal.jpg'
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 
 const scene = new THREE.Scene();
@@ -19,7 +20,7 @@ camera.position.setX(5)
 renderer.render(scene, camera)
 
 const tetrahedron = new THREE.TetrahedronGeometry(10, 0)
-const pyramidTexture = new THREE.TextureLoader().load('./Brick_Wall_017_normal.jpg');
+const pyramidTexture = new THREE.TextureLoader().load(brickTexture);
 const planetMaterial = new THREE.MeshStandardMaterial({color: 0xE7A522, normalMap: pyramidTexture })
 const planet = new THREE.Mesh(tetrahedron, planetMaterial)
 
