@@ -37,5 +37,9 @@
 }
 
 footer{
-  margin-top: 100px;
+  margin-top: 300px;
+}
+
+.Shop h3{
+  font-size: 3rem; 
 }

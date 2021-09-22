@@ -7,7 +7,7 @@ import monopoly from '../shopImages/monopoly.png'
 import leggingsGrey from '../shopImages/leggingsGrey.jpg'
 import leggingsPink from '../shopImages/leggingsPink.jpg'
 import sweatpants from '../shopImages/sweatpants.jpg'
-
+import tiffany from '../shopImages/tiffany.PNG'
 
 const products = [
     {
@@ -41,6 +41,12 @@ const products = [
         inStock: false
     },
     {
+        name: "A good ol' slurpin",
+        images: [tiffany],
+        price: 7.25,
+        inStock: true
+    },
+    {
         name: "#findyourtruerile shirt",
         images: [monopoly],
         price: 15.99,
@@ -56,7 +62,7 @@ const products = [
         name: "Redeeming Butt",
         images: [sweatpants],
         price: 0,
-        inStock: false
+        inStock: true
     },
 ]
 

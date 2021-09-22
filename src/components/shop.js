@@ -8,6 +8,8 @@ const Selection = styled.div`
     flex-wrap: wrap;
     margin-left: 15%;
 
+    
+
 
 `
 
