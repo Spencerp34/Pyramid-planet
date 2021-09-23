@@ -93,6 +93,9 @@ function Podcast(){
                     <h3>Join us on some Fridays:</h3>
                     <a href="https://www.youtube.com/playlist?list=PLMg3BeogSW5iMU8KQPuuqxcPWPFxw0EXP" target="_blank" className='logo'>Watch to get riled</a>
                 </div>
+                <footer>
+                    <h6>This Website was created by Spencer P using React.js and three.js. Pyramid Planet© is a not actually copyrighted as of yet, this is just a educational site for learning Web-Developement </h6>
+                </footer>
             </PodcastDiv>
         </div>
     )
