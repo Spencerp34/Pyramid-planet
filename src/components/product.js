@@ -2,12 +2,15 @@ import styled from 'styled-components';
 import React, {useState} from 'react';
 
 const ProductBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
     background-color: rgba(66, 69, 75, 0.7);
     border-radius: 5px;
     padding: 5px;
     margin:1.5%;
     width: 25%;
-
+    
 
     h4{
         margin-bottom:10px;
@@ -27,9 +30,16 @@ const ProductBox = styled.div`
 
     }
 
+    .imgContainer{
+        width: 100%;
+        min-height: width;
+    }
+
     img{
-        height: 350px;
-        width: 350px;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
     }
 
 `
@@ -51,7 +61,10 @@ function Product(props){
             <ProductBox>
                 <div className='Product'>
                     <h4> {product.name} </h4>
-                    <img alt={product.name} src={product.images[0]}/>
+                    <div className="imgContainer">
+                        <img alt={product.name} src={product.images[0]}/>
+                    </div>
+                    
                     <div className="buy">
                         <h5> ${product.price}</h5>
                         <button class="to-cart" type="button" style={style} >{inStock(product.inStock)} </button>
