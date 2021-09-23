@@ -69,7 +69,7 @@ function Podcast(){
                 <h5>(No affiliation with Wendy's© and/or Nintendo inc©</h5>
                 <br/><br/>
                 <img src={hate} alt="love/hate relationship"/>
-                <h4>Here on our show, You'll hear us laugh, cry, hate each other, and yet, love on another.</h4>
+                <h4>Here on our show, You'll hear us laugh, cry, hate each other, and yet, love one another.</h4>
                 <h4>Listen in each week for half an hour, as we tackle all of the worlds problems such as:</h4>
                 <div className='topics'>
                     <div className='philosophy'>
