@@ -23,7 +23,7 @@ const HeadWrap = styled.div`
     animation: fadeIn 6s;
     margin-left: 5%;
     margin-top: 15px;
-    transition: .3s;
+    transition: .5s;
     :hover{
       color: rgb(216, 73, 73);
       font-weight: bold;
