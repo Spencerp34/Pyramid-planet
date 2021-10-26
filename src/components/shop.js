@@ -33,7 +33,7 @@ function Shop(){
             </Selection>
             <ShoppingCart shoppingCart={shoppingCart} />
             <footer>
-                <h6>This Website was created by Spencer P using React.js and three.js. Pyramid Planet© is a not actually copyrighted as of yet, this is just a educational site for learning Web-Developement </h6>
+                <h6>This Website was created by Spencer P using React.js and three.js Pyramid Planet© is a not actually copyrighted as of yet, this is just a educational site for learning Web-Developement </h6>
             </footer>
         </div>
     )

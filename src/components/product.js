@@ -3,14 +3,20 @@ import styled from 'styled-components';
 const ProductBox = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
     background-color: rgba(66, 69, 75, 0.7);
     border-radius: 5px;
     padding: 5px;
     margin:1.5%;
     width: 25%;
     
-
+    .Product{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
     h4{
         margin-bottom:10px;
     }
@@ -21,17 +27,21 @@ const ProductBox = styled.div`
     }
 
     button{
-        width: 40%;
+        width: 100px;
         padding: 5%;
+        margin: 5px;
         font-weight: bold;
+        font-size: 1vw;
         border-radius: 5px;
         border: 2px solid black;
 
     }
 
     .imgContainer{
-        width: 100%;
-        min-height: width;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
     }
 
     img{
@@ -39,6 +49,7 @@ const ProductBox = styled.div`
         max-width: 100%;
         min-height: 100%;
         max-height: 100%;
+        object-fit: contain;
     }
 
 `
