@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import React, {useState} from 'react';
 
 const ProductBox = styled.div`
     display: flex;
@@ -46,8 +45,7 @@ const ProductBox = styled.div`
 
 function Product(props){
     const {product} = props
-    const [stocked, setStocked] = useState(product.inStock)
-
+    const stocked = product.inStock
     function inStock(){
         return stocked ? "ADD TO CART" : "OUT OF STOCK"
     }
@@ -67,7 +65,7 @@ function Product(props){
                     
                     <div className="buy">
                         <h5> ${product.price}</h5>
-                        <button class="to-cart" type="button" style={style} >{inStock(product.inStock)} </button>
+                        <button class="to-cart" onClick={null} type="button" style={style} >{inStock(product.inStock)} </button>
                     </div>
                 </div>
             </ProductBox>

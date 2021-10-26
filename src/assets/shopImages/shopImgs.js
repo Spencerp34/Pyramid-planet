@@ -35,7 +35,7 @@ const products = [
         inStock: false
     },
     {
-        name: "Crappy aspirations",
+        name: "Poop is Art",
         images: [inspiring],
         price: 0.02,
         inStock: false
@@ -44,7 +44,7 @@ const products = [
         name: "A good ol' slurpin",
         images: [tiffany],
         price: 7.25,
-        inStock: true
+        inStock: false
     },
     {
         name: "#findyourtruerile shirt",
@@ -62,7 +62,7 @@ const products = [
         name: "Redeeming Butt",
         images: [sweatpants],
         price: 0,
-        inStock: true
+        inStock: false
     },
 ]
 
