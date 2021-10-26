@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 import styled from 'styled-components';
 
 const Heading = styled.div`
@@ -63,7 +63,7 @@ function Header(){
         <Heading>
           <HeadWrap>
               <h2>Welcome to</h2>
-              <Link class='logo' to='/'>Pyramid Planet</Link>
+              <Link className='logo' to='/'>Pyramid Planet</Link>
           </HeadWrap>
           <NavBar>
             <Link className="nav" to='/Shop'>Shop Merch</Link>
