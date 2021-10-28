@@ -7,7 +7,6 @@ import ShoppingCart from "./shoppingCart";
 const Selection = styled.div`
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 15%;
@@ -15,9 +14,6 @@ const Selection = styled.div`
 
 function Shop(){
     const [shoppingCart, setShoppingCart] = useState([])
-    // const updateCart = () => {
-    //     setShoppingCart([]);
-    // }
 
     const addToCart = (product) => {
         setShoppingCart([...shoppingCart, product])
@@ -25,7 +21,6 @@ function Shop(){
 
     const removeCart = (product) => {
         const filtered = shoppingCart.filter((item) => item !== product)
-        // console.log(filtered)
         setShoppingCart(filtered)
     }
 

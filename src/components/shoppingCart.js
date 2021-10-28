@@ -3,7 +3,6 @@ import CheckoutLine from './checkoutLine'
 
 const ShoppingCartWrap = styled.div`
     display: flex;
-    /* width: 70%; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -37,7 +36,7 @@ function ShoppingCart(props){
         <ShoppingCartWrap>
             <h4>Shopping Cart</h4>
             {shoppingCart.map(product => (
-                <CheckoutLine product={product} removeCart={removeCart} key={product.name} />
+                <CheckoutLine product={product} removeCart={removeCart} key={Math.random()} />
             ))}
             <h4>{total()}</h4>
             <button>{payOrGetOut}</button>
