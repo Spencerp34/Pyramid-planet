@@ -55,7 +55,7 @@ const ProductBox = styled.div`
 `
 
 function Product(props){
-    const {product} = props
+    const {product, addToCart} = props
     const stocked = product.inStock
     function inStock(){
         return stocked ? "ADD TO CART" : "OUT OF STOCK"
@@ -64,6 +64,10 @@ function Product(props){
     const style = {
         backgroundColor: (stocked ?  "#2D9CDB" : "rgb(216, 73, 73)"),
         transform: [( stocked ? {rotate: '0deg'} : {rotate: '20deg'} )]
+    }
+
+    const handleClick = () => {
+        addToCart(product)
     }
 
     return(
@@ -76,7 +80,7 @@ function Product(props){
                     
                     <div className="buy">
                         <h5> ${product.price}</h5>
-                        <button class="to-cart" onClick={null} type="button" style={style} >{inStock(product.inStock)} </button>
+                        <button class="to-cart" onClick={handleClick} product="testing" type="button" style={style} >{inStock(product.inStock)} </button>
                     </div>
                 </div>
             </ProductBox>
