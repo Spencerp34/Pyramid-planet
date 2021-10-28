@@ -19,16 +19,16 @@ function Shop(){
     //     setShoppingCart([]);
     // }
 
-    // const addToCart = (item) => {
-    //     setShoppingCart([...shoppingCart, item])
-    // }
+    const addToCart = (product) => {
+        setShoppingCart([...shoppingCart, product])
+    }
 
     return(
         <div className='Shop'>
             <h3> Shop</h3>
             <Selection>
                 {products.map(product => (
-                    <Product product={product} addToCart={null} key={product.name} />
+                    <Product product={product} addToCart={addToCart} key={product.name} />
                 ))}
             </Selection>
             <ShoppingCart shoppingCart={shoppingCart} />

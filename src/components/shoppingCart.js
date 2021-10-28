@@ -40,7 +40,7 @@ function ShoppingCart(props){
         <ShoppingCartWrap>
             <h4>Shopping Cart</h4>
             {shoppingCart.map(product => (
-                <div className='item'>
+                <div className='item' key={product.name}>
                     <h5>{product.name}</h5>
                     <span> | </span>
                     <h6>${product.price}</h6>
