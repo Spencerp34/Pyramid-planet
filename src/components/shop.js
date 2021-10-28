@@ -14,13 +14,19 @@ const Selection = styled.div`
 `
 
 function Shop(){
-    const [shoppingCart, setShoppingCart] = useState([products[0], products[1]])
+    const [shoppingCart, setShoppingCart] = useState([])
     // const updateCart = () => {
     //     setShoppingCart([]);
     // }
 
     const addToCart = (product) => {
         setShoppingCart([...shoppingCart, product])
+    }
+
+    const removeCart = (product) => {
+        const filtered = shoppingCart.filter((item) => item !== product)
+        // console.log(filtered)
+        setShoppingCart(filtered)
     }
 
     return(
@@ -31,7 +37,7 @@ function Shop(){
                     <Product product={product} addToCart={addToCart} key={product.name} />
                 ))}
             </Selection>
-            <ShoppingCart shoppingCart={shoppingCart} />
+            <ShoppingCart shoppingCart={shoppingCart} removeCart={removeCart} />
             <footer>
                 <h6>This Website was created by Spencer P using React.js and three.js Pyramid Planet© is a not actually copyrighted as of yet, this is just a educational site for learning Web-Developement </h6>
             </footer>
