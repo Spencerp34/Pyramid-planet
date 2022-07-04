@@ -66,7 +66,7 @@ function Podcast(){
             <PodcastDiv>
                 <h3> Podcast</h3>
                 <h4>Welcome to our podcast named Spicy Nuggs & Smash Bros</h4>
-                <h5>(No affiliation with Wendy's© and/or Nintendo inc©</h5>
+                <h5>(No affiliation with Wendy's© and/or Nintendo inc©)</h5>
                 <br/><br/>
                 <img src={hate} alt="love/hate relationship"/>
                 <h4>Here on our show, You'll hear us laugh, cry, hate each other, and yet, love one another.</h4>
@@ -85,7 +85,7 @@ function Podcast(){
                         <img src={poop} alt="poop" />
                     </div>
                     <div className='dip'>
-                        <h4>Dippikng Sauces</h4>
+                        <h4>Dipping Sauces</h4>
                         <img src={dip} alt="dip" />
                     </div>
                 </div>
