@@ -78,7 +78,7 @@ function About(){
                 </div>
                 <h5> and one thing lead to another and they made this ungodly horror of a YouTube Channel:  </h5>
                 <br/><br/>
-                <a href="https://www.youtube.com/channel/UC-T-FLUY7nqLKyrDf5DXARA" target="_blank" className='logo'>Pyramid Planet</a>
+                <a href="https://www.youtube.com/channel/UC-T-FLUY7nqLKyrDf5DXARA" rel="noreferrer" target="_blank" className='logo'>Pyramid Planet</a>
                 <br/><br/>
                 <h5>Check out our Channel above to see our not so daily Vlogs, our Adventures, shorts that but the Horror in Horrible, and our thought provoking podcast (Spicy Nuggs & Smash Bros)</h5>
             </div>

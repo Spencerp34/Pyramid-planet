@@ -12,6 +12,7 @@ const ShoppingCartWrap = styled.div`
     padding: 5px;
     button{
        background-color: rgb(216, 73, 73);
+       cursor: pointer;
     }
 `
 

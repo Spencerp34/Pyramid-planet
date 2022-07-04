@@ -21,6 +21,7 @@ const CheckoutLineWrap = styled.div`
             align-items: center;
             background-color: grey;
             width: 5%;
+            cursor: pointer;
         }
     }
     

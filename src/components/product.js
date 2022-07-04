@@ -34,7 +34,7 @@ const ProductBox = styled.div`
         font-size: 1vw;
         border-radius: 5px;
         border: 2px solid black;
-
+        cursor: pointer;
     }
 
     .imgContainer{
@@ -80,7 +80,7 @@ function Product(props){
                     
                     <div className="buy">
                         <h5> ${product.price}</h5>
-                        <button class="to-cart" onClick={handleClick} product="testing" type="button" style={style} >{inStock(product.inStock)} </button>
+                        <button className="to-cart" onClick={handleClick} product="testing" type="button" style={style} >{inStock(product.inStock)} </button>
                     </div>
                 </div>
             </ProductBox>
